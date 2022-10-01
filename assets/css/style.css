@@ -1,5 +1,15 @@
+/*css wireframe - delete later*/
+main {
+    flex-grow: 1;
+}
+
+header, main, section, footer {
+border: 2px solid green;
+}
+/*variables*/
+
 :root {
- /* color palette */
+    /* color palette */
     --dark: #355C7D;
     --light: #ffffff;
     --peach: #f8b195;
@@ -7,8 +17,14 @@
     --purple: #C06C84;
     --dark-purple: #6c5b7b;
     --navlink-color: #f8b195;
+
+    /*fonts*/
+
+    /*spacing*/
   }
   
+/*element styles*/
+
   body {
     display: flex;
     flex-direction: column;
