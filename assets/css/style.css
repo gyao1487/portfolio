@@ -1,5 +1,5 @@
 /*css wireframe - delete later*/
-main {
+/*main {
     flex-grow: 1;
 }
 
@@ -9,25 +9,31 @@ section,
 footer,
 figure,
 div,
-.app-grid-container,.card {
+.app-grid-container,
+.card {
     border: 2px solid green;
 }
-
+*/
 /*variables*/
 
 :root {
     /* color palette */
-    --dark: #355C7D;
+    --dark: #011340;
     --light: #ffffff;
-    --peach: #f8b195;
-    --pink: #f67280;
-    --purple: #C06C84;
-    --dark-purple: #6c5b7b;
-    --navlink-color: #f8b195;
+    --peach: #fe6675;
+    --pink: #fe3e8a;
+    --purple: #853987;
+    --blue: #023583;
+    --neon-blue: #8ffcff;
+    --navlink-color: #fe6675;
     /*fonts*/
 
     /*spacing*/
 }
+
+/*Typography*/
+
+
 
 *,
 *::before,
@@ -36,12 +42,29 @@ div,
 }
 
 /*element styles*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Century Gothic", Roboto, Arial, sans-serif;
+
 
 }
 
@@ -54,14 +77,21 @@ main {
 
 img {
     max-height: 100%;
-    display: block;   
+    display: block;
+}
+
+p {
+    text-decoration: none;
 }
 
 /* Header */
 header {
     width: 100%;
-    background-color: var(--dark);
+    background-image: url(https://media.istockphoto.com/vectors/pixel-art-cyberpunk-metropolis-background-vector-id1279840008?k=20&m=1279840008&s=170667a&w=0&h=-iGUKiZEL2WRbhNLL6N5kEb0aR8BRHHGY8pODdiRTow=);
+    background-image: no-repeat;
+    background-size: cover;
     color: var(--light);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
@@ -82,6 +112,7 @@ nav {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    color: #fe6675
 }
 
 nav a {
@@ -102,17 +133,34 @@ nav a:hover {
     grid-gap: 20px;
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
 .headshot {
     width: 100%;
     max-width: 500px;
+    border-radius: 50%;
+}
+.headshot:hover {
+    box-shadow: inset 0px 0px 8px #fe3e8a, 0px 0px 15px #fe3e8a;
+    transition: all .5s ease-in;
 }
 
 
 /* Portfolio Section*/
+.work {
+    text-align: center;
+}
+
 .app-grid-container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     max-width: 1240px;
     margin: 0 auto;
 
@@ -121,17 +169,32 @@ nav a:hover {
 .card {
     min-height: 100%;
     background: white;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
     position: relative;
-  
+    transition: all .3s ease-in;
+    text-decoration: none;
 
+}
+
+.card:hover {
+    box-shadow: 7px 7px 7px 7px var(--neon-blue);
+}
+
+.card-text {
+    margin: 15px;
+    padding-bottom: 30px;
+    text-decoration: none;
 }
 
 .app-1 {
     grid-column: 1/ span 2;
 }
 
-
+.card img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
 
 /* largest image*/
 
@@ -140,7 +203,12 @@ nav a:hover {
 
 
 /* Contact Section */
+.contact-links {
+    margin: 30px;
+    text-align: center;
+}
 .contact-container {
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center
@@ -152,8 +220,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: var(--dark);
-    color: var(--light);
+    background-image: url(https://media.istockphoto.com/vectors/pixel-art-cyberpunk-metropolis-background-vector-id1279840008?k=20&m=1279840008&s=170667a&w=0&h=-iGUKiZEL2WRbhNLL6N5kEb0aR8BRHHGY8pODdiRTow=);
+    background-image: no-repeat;
+    background-size: cover;
+    color: var(--light)
 }
 
 
@@ -161,15 +231,48 @@ footer {
 
 
 /*media queries*/
-/*@media screen and (min-width: 200px) {
-    .app-grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
 
+@media screen and (max-width: 410px) {
+    .app-grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .app-1 {
+        grid-column: 1/ span 1;
+    }
+
+    .card {
+        grid-column: 1/ span 1;
+    }
+
+    .about-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .about-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headshot {
+        width: 100%;
+        max-width: 500px;
+        
     }
 }
 
-@media screen and (min-width: 550px) {
+
+
+@media screen and (max-width: 992px) {
     .app-grid-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -177,53 +280,4 @@ footer {
     .app-1 {
         grid-column: 1/ span 2;
     }
-
 }
-
-@media screen and (min-width: 1063px) {
-    .app-grid-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 1240px;
-    }*/
-
-
-
-
-/*from tutoring session
-
-  .container {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.item2 {
-  background-color: yellow;
-}
-
-.item {
-}
-
-.item:nth-of-type(1) {
-  flex: 50%;
-  background-color: red;
-}
-
-.item:nth-of-type(2) {
-  flex: 50%;
-  background-color: blue;
-}
-
-.item:nth-of-type(3) {
-  background-color: green;
-  flex-basis: 50%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-*/
