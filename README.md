@@ -2,33 +2,30 @@
 
 ## Description
 
-The goal of this project is to improve on the original homepage for Horiseon Social Solution Services, especially the accessibility features and semantic structure. The secondary goal was to learn what it means to refactor code, to implement concepts around HTML and CSS that have been learned during the first week of the bootcamp in a practical/hands-on way, and also to understand accessibility standards for web development. 
+The primary goal of this project is to apply HTML and CSS skills learned in the previous modules in order to create a web application from scratch. The secondary goal is to create a portfolio page to showcase skills and talents to employers which I can continue to use and add to as the course progresses. 
 
-The codebase is refactored to improve not only accessibility, but long-term sustainability as well. The webpage functions as the original does, with some improvements in CSS and HTML structure.
+During the construction of this webpage, I have utilized flexbox, grid, media queries, CSS variables, pseudoelements and basic animations to create a functional as well as aesthetically interesting.  
 
 ## Installation
 
-You can open the webpage in your web browser using this URL: https://gyao1487.github.io/Module-1-Challenge/
+You can open the webpage in your web browser using this URL: 
 
 ## Usage
+Features implemented on this webpage:
+* Clicking the links in the navigation bar at the top will take you to the respective sections on the webpage
+* In the work section, animations are applied when hovering the cursor over the different applications.
+* Clicking the cards in the work section will redirect you to the deployed applications.
+* Layout is responsive and will adapt to the viewport at various screen sizes to optimize readability and aesthetic.
 
-Implemented the following improvements:
-
-* Semantic HTML: Replaced generic <div> elements with semantic elements that better describe the structure and function of each part of the page and removed irrelevant tags.
-* Image attributes: Added alt text to <img> elements to increase accessibility especially for users who use assistive technology.
-* Heading Order: Made edits to ensure that heading elements are in logical and sequential order
-* Page title: Added clear and concise page title to <title> element for increased SEO and accessibility.
-* CSS Styling: Consolidated CSS selectors and properties, and organized to follow the semantic structure of HTML.
-
-Inspect the page on the web browser to view changes. Below is a screenshot of the webpage.
-
-![Webpage Screenshot](https://user-images.githubusercontent.com/112779767/192166504-5a426bdb-854c-4c50-91fd-b7ed4fa727bf.png)
+![Webpage Screenshot](./assets/img/screenshot.PNG)
 
 ## Credits
 Referenced resources from the following websites to complete this project:
-* https://www.w3schools.com/html/html5_semantic_elements.asp
-* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
-* https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet 
+* https://www.w3schools.com/css
+* https://www.w3schools.com/html
+* https://chenhuijing.com/blog/the-horizontal-overflow-problem/
+* https://codepen.io/tutsplus/pen/YGQKry
+
 Placeholder images used:
 * https://i.pinimg.com/564x/77/34/c5/7734c51a3bbcdf66d78d9763dbde2a6c.jpg
 * https://www.northwestern.edu/brand/images/wordmark/guideline-sm4.gif
