@@ -8,7 +8,7 @@ During the construction of this webpage, I have utilized flexbox, grid, media qu
 
 ## Installation
 
-You can open the webpage in your web browser using this URL: 
+You can open the webpage in your web browser using this URL: https://gyao1487.github.io/portfolio/
 
 ## Usage
 Features implemented on this webpage:

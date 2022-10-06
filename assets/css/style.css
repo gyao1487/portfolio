@@ -226,18 +226,6 @@ footer {
 /*media queries*/
 
 @media screen and (max-width: 480px) {
-    .app-grid-container {
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-    }
-
-    .app-1 {
-        grid-column: 1/ span 2;
-    }
-
-    .card {
-        grid-column: 1/ span 2;
-    }
 
     .about-layout {
         display: flex;
@@ -245,9 +233,21 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media screen and (max-width: 640px) {
+    .header-text h1 {
+        display: none
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+
+    }
+
     .about-layout {
         display: flex;
         flex-wrap: wrap;
