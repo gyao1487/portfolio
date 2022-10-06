@@ -4,7 +4,7 @@
 
 The primary goal of this project is to apply HTML and CSS skills learned in the previous modules in order to create a web application from scratch. The secondary goal is to create a portfolio page to showcase skills and talents to employers which I can continue to use and add to as the course progresses. 
 
-During the construction of this webpage, I have utilized flexbox, grid, media queries, CSS variables, pseudoelements and basic animations to create a functional as well as aesthetically interesting.  
+I have utilized flexbox, grid, media queries, CSS variables, pseudoelements and basic animations to create a functional, as well as aesthetically interesting, portfolio webpage.  
 
 ## Installation
 
