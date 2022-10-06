@@ -12,10 +12,10 @@ You can open the webpage in your web browser using this URL: https://gyao1487.gi
 
 ## Usage
 Features implemented on this webpage:
-* Clicking the links in the navigation bar at the top will take you to the respective sections on the webpage
+* Clicking the links in the navigation bar at the top will take the user to the respective sections on the webpage.
 * In the work section, animations are applied when hovering the cursor over the different applications.
 * Clicking the cards in the work section will redirect you to the deployed applications.
-* Layout is responsive and will adapt to the viewport at various screen sizes to optimize readability and aesthetic.
+* Layout is responsive and will adapt to the viewport at various screen sizes to optimize readability and aesthetics.
 
 ![Webpage Screenshot](./assets/img/screenshot.PNG)
 
